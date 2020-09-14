@@ -1,0 +1,544 @@
+.card-header {
+	background: white;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+	background: white;
+}
+
+.banner {
+	background-image: url('../images/banner.jpg');
+	height: 400px;
+	background-size: cover;
+}
+
+.title {
+	margin: auto;
+	padding-top: 100px;
+	max-width: 500px;
+	text-align: center;
+}
+
+.title h3 {
+	color: white;
+	text-align: center;
+}
+
+.part1 {
+	background-color: #72bcd4;
+	text-align: center;
+	padding: 0 20px 20px 20px;
+	font-size: 15px;
+}
+
+.part1 h4, p {
+	font-family: arial;
+}
+
+.part2 p {
+	color: black;
+}
+
+.text-justify {
+	color: black;
+}
+
+.middle p {
+	text-align: center;
+}
+
+.care {
+	color: blue;
+	width: 100px;
+	margin: 0px;
+}
+
+.logo img {
+	width: 100px;
+}
+
+.doctor {
+	text-align: center;
+}
+
+.doctor img {
+	height: 270px;
+}
+
+.no-border {
+	border: none;
+}
+
+.menubar {
+	padding: 0px;
+}
+
+.menubar a {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 17px;
+}
+
+.no-padding {
+	padding: 0px;
+}
+
+.font {
+	font-size: 14px;
+}
+
+.blurb i {
+	font-size: 40px;
+	margin: 40px auto 0;
+	background: white;
+	width: 60px;
+	height: 60px;
+	display: block;
+	line-height: 60px;
+	border-radius: 50%;
+}
+
+.blurbi i {
+	font-size: 30px;
+	margin: 40px auto 0;
+	background: white;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50%;
+	background: #72bcd4;
+	text-align: center;
+}
+
+.blurb3 i {
+	font-size: 20px;
+	margin: 40px auto 0;
+	background: white;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	background: white;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.blurb {
+	color: white;
+}
+
+.icon-color {
+	color: black;
+}
+
+.blurb h4 {
+	padding-top: 10px;
+}
+
+.middle h3 {
+	font-weight: 600;
+	font-size: 2rem;
+	padding-top: 50px;
+}
+
+.middle p {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.choose-us-padding1 {
+	padding-left: 40px;
+}
+
+.choose-us-padding2 {
+	padding-left: 40px;
+	padding-top: 10px;
+}
+
+.choose-us-padding3 {
+	padding-right: 40px;
+}
+
+.choose-us-padding4 {
+	padding-right: 40px;
+	padding-top: 10px;
+}
+
+.footer {
+	background-color: black;
+}
+
+.blurb3 span {
+	color: white;
+	padding-left: 10px;
+}
+
+.blurb3 p {
+	color: white;
+	padding-left: 60px;
+}
+
+.patients-visitors a {
+	text-decoration: none;
+	color: white;
+}
+
+.patients-visitors a:hover {
+	color: #72bcd4;
+}
+
+.patients-visitors {
+	padding-top: 35px;
+}
+
+.general a {
+	text-decoration: none;
+	color: white;
+}
+
+.general a:hover {
+	color: #72bcd4;
+}
+
+.col-12 span {
+	padding-left: 10px;
+}
+
+.health {
+	padding-top: 35px;
+}
+
+.health h4 {
+	padding-bottom: 10px;
+}
+
+.health a {
+	text-decoration: none;
+	color: white;
+}
+
+.health a:hover {
+	color: #72bcd4;
+}
+
+.research a {
+	text-decoration: none;
+	color: white;
+}
+
+.research a:hover {
+	color: #72bcd4;
+}
+
+.subscription {
+	padding-top: 35px;
+	color: white;
+	margin: auto;
+	display: table;
+}
+
+.subscription input[name=subscribe] {
+	text-align: center;
+	margin-top: 10px;
+	display: table;
+	width: 200px;
+}
+
+.subscription h4 {
+	padding-bottom: 15px;
+}
+
+.subscription input[name=email] {
+	width: 200px;
+}
+
+.copyright span {
+	padding-right: 10px;
+}
+
+.copyright p {
+	font-size: 15px;
+}
+
+.facebook-icon i {
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 66%;
+	color: black;
+	float: left;
+}
+
+.twitter-icon i {
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 15px;
+	color: black;
+	float: left;
+}
+
+.youtube-icon i {
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 15px;
+	color: black;
+	float: left;
+}
+
+.linkedin-icon i {
+	font-size: 12px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	margin-left: 15px;
+	color: black;
+	float: left;
+}
+
+.sidebar {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.article {
+	padding-right: 10px;
+}
+
+.sidebar p, h3 {
+	text-align: left;
+}
+
+.separator {
+	border-right: 1px solid black;
+}
+
+.contactForm input {
+	width: 500px;
+}
+
+.contact {
+	color: red;
+}
+
+.contactForm input[name=submit] {
+	width: 100px;
+	margin-left: 55%;
+}
+
+.addressbar h2 {
+	margin-top: 20px;
+}
+
+.map {
+	margin-bottom: 10px;
+}
+
+.map iframe {
+	width: 100%;
+}
+
+.contactForm h1 {
+	margin-top: 20px;
+}
+
+.contactForm textarea {
+	width: 500px;
+}
+
+.addressbar i {
+	margin-right: 10px;
+}
+
+.addressbar p {
+	margin-left: 20px;
+}
+
+.blog-title {
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: blue;
+}
+
+.blog-title h3 {
+	text-align: center;
+}
+
+.blog1 {
+	padding-top: 10px;
+}
+
+.blog1 h2 {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.blog1 img {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	box-shadow: 3px 2px 30px #888888;
+}
+
+.blog1 a {
+	text-decoration: none;
+}
+
+.blog1 p {
+	margin-bottom: 0;
+}
+
+.blog1 {
+	padding-bottom: 10px;
+}
+
+.popular {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.left-blog {
+	padding-top: 30px;
+	float: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 50%;
+}
+
+.left-blog h4 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.left-blog a {
+	margin-bottom: 10px;
+}
+
+.left-blog img {
+	box-shadow: 3px 2px 30px #888888;
+}
+
+.right-blog {
+	float: left;
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 50%;
+}
+
+.right-blog h4 {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.right-blog img {
+	box-shadow: 3px 2px 30px #888888;
+}
+
+.single-title {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	background-image: url('../images/banner.jpg');
+	background-size: cover;
+}
+
+.single-blog p {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.single-post img {
+	margin-top: 30px;	
+	box-shadow: 3px 2px 30px #888888;
+}
+
+.author img {
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+.author span {
+	padding-left: 40px;
+}
+
+.author h5 {
+	margin-bottom: -5px;
+}
+
+.commentForm input[name=submit] {
+	width: 100px;
+	margin-left: 55%;
+}
+
+.commentForm input {
+	width: 500px;
+}
+
+.commentForm textarea {
+	width: 500px;
+}
+
+.blog4-posts {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.appointment {
+	text-align: right;
+	padding-right: 0;
+}
+
+.card-appointment {
+	padding-right: 16px;
+}
+
+.login-form h2 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.login-form {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.register-form {
+	margin-top: 30px;
+}
+
+.register-form input[name=signup] {
+	float: right;
+	margin-bottom: 30px;
+}
+
+.register-form h2 {
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.login-form input[name=submit] {
+	float: right;
+	margin-bottom: 30px;
+}
+
+.register-form span {
+	margin-right: 10px;
+}
+
+.register-form input[name=submit] {
+	float: right;
+}

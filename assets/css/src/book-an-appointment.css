@@ -1,0 +1,12 @@
+.appointment-form h2 {
+	text-align: center;
+}
+
+.appointment-form article {
+	padding-top: 30px;
+}
+
+.appointment-form input[name=submit] {
+	float: right;
+	margin-bottom: 30px;
+}
