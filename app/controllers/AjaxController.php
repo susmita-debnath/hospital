@@ -19,10 +19,16 @@
 				$this->email = $_POST['email'];
 				$this->password = $_POST['password'];
 				$this->date = $_POST['date'];
+				$this->mobile = $_POST['mobile'];
 				$this->gender = $_POST['gender'];
 				$this->address = $_POST['address'];
 
 				print_r($this);
+			}
+
+			public function register() {
+				$user = new User();
+				$user->name = 
 			}
 		}
 

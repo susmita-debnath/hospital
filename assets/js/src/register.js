@@ -69,11 +69,12 @@ jQuery( document ).ready( function($){
 		var password = $('#password').val();
 		var retype = $('#retype').val();
 		var date = $('#datepicker').val();
+		var mobile = $('#mobile').val();
 		var gender = $('input[name=gender]:checked').val();
 		var address = $('#address').val();
 
 		// Field common validation
-		if( email == '' || name == '' || password == '' || retype == '' || date == '' || address == '' || gender == '' ) errorStatus.push(0);
+		if( email == '' || name == '' || password == '' || retype == '' || date == '' || mobile == '' || address == '' || gender == '' ) errorStatus.push(0);
 
 		//Email validation
 		if( false === validateEmail(email) ) errorStatus.push(1);
@@ -110,6 +111,7 @@ jQuery( document ).ready( function($){
 				email: email,
 				password: password,
 				date: date,
+				mobile: mobile,
 				gender: gender,
 				address: address
 			},

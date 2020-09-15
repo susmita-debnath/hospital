@@ -13,6 +13,7 @@
 
 	$slug = ucfirst( $slug );
 
+	require_once './config.php';
 	require_once './app/controllers/User.php';
 	require_once './app/lib/functions.php';
 	require_once './app/controllers/BaseController.php';
