@@ -23,12 +23,16 @@
 				$this->gender = $_POST['gender'];
 				$this->address = $_POST['address'];
 
-				print_r($this);
+				//print_r($this);
 			}
 
 			public function register() {
 				$user = new User();
-				$user->name = 
+				if ( true === $user->uniquenessChecking($_POST['email']) ) {
+					$user->set_user_data( $_POST );
+					$user->save();
+				}
+				else echo "The email has already been taken.";
 			}
 		}
 

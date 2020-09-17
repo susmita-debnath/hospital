@@ -115,7 +115,9 @@ jQuery( document ).ready( function($){
 
 	$('#datepicker').datepicker({
         changeYear: true,
-        yearRange: "1900:2020"
+        yearRange: "1900:2020",
+        dateFormat : 'yy-mm-dd',
+        maxDate : 0
 	}).attr('readonly','readonly');
 
 	var pwerr = '<p>Please provide the password in following format:</p>';
@@ -125,7 +127,7 @@ jQuery( document ).ready( function($){
 			pwerr += '<li>Minimum 1 uppercase letter & 1 lowercase letter </li>';
 			pwerr += '<li>Minimum 1 special character</li>';
 		pwerr += '</ul>';
-	var errors = ['<p>All fields are required.</p>', '<p>Email is invalid.</p>', pwerr, '<p>Password is not same</p>'];
+	var errors = ['<p>All fields are required.</p>', '<p>Email is invalid.</p>', pwerr, '<p>Password is not same</p>', '<p>The email has already been taken.</p>'];
 
 	$('#signup').click( function(){
 		$('#error').html('');
@@ -151,6 +153,10 @@ jQuery( document ).ready( function($){
 		//Retype password check
 		if( password !== retype ) errorStatus.push(3);
 
+		// Unique email check
+		//if ( false === uniquenessChecking(email) ) errorStatus.push(3);
+		//alert(uniquenessChecking(email));
+
 		if ( errorStatus.length !== 0 ) {
 			var i;
 
@@ -170,7 +176,7 @@ jQuery( document ).ready( function($){
 		$('#error').removeClass('alert alert-danger');
 
 		$.ajax({
-			url: 'http://hospital.test/ajax/get_data',
+			url: 'http://hospital.test/ajax/register',
 			method: 'POST',
 			data: {
 				name: name,
@@ -183,6 +189,12 @@ jQuery( document ).ready( function($){
 			},
 			success: function( response ) {
 				console.log( response );
+				$('#error').html(response);
+				$('#error').addClass('alert alert-danger');
+
+				$('html, body').animate({
+					scrollTop: $('#error').offset().top
+				});
 			}
 		});
 

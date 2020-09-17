@@ -14,8 +14,9 @@
 	$slug = ucfirst( $slug );
 
 	require_once './config.php';
-	require_once './app/controllers/User.php';
 	require_once './app/lib/functions.php';
+	require_once './app/models/Model.php';
+	require_once './app/models/User.php';
 	require_once './app/controllers/BaseController.php';
 	require_once './app/controllers/'. $slug .'Controller.php';
 
