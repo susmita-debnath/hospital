@@ -22,6 +22,28 @@ jQuery( document ).ready( function($) {
 
 		$('#error').removeClass('alert alert-danger');
 
+		$.ajax({
+			url: 'http://hospital.test/ajax/login',
+			method: 'POST',
+			dataType: 'JSON',
+			data: {
+				email: email,
+				password: password
+			},
+			success: function( response ) {
+				console.log( response );
+				$('#error').html(response);
+				if ( response.code === 1 ) {
+					window.location = "http://hospital.test/dashboard";
+				}
+				$('#error').addClass('alert alert-danger');
+
+				$('html, body').animate({
+					scrollTop: $('#error').offset().top
+				});
+			}
+		});
+
 		return false;
 
 	} );

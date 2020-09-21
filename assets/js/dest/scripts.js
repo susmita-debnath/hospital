@@ -60,6 +60,28 @@ jQuery( document ).ready( function($) {
 
 		$('#error').removeClass('alert alert-danger');
 
+		$.ajax({
+			url: 'http://hospital.test/ajax/login',
+			method: 'POST',
+			dataType: 'JSON',
+			data: {
+				email: email,
+				password: password
+			},
+			success: function( response ) {
+				console.log( response );
+				$('#error').html(response);
+				if ( response.code === 1 ) {
+					window.location = "http://hospital.test/dashboard";
+				}
+				$('#error').addClass('alert alert-danger');
+
+				$('html, body').animate({
+					scrollTop: $('#error').offset().top
+				});
+			}
+		});
+
 		return false;
 
 	} );
@@ -178,6 +200,7 @@ jQuery( document ).ready( function($){
 		$.ajax({
 			url: 'http://hospital.test/ajax/register',
 			method: 'POST',
+			dataType: 'JSON',
 			data: {
 				name: name,
 				email: email,
@@ -188,9 +211,10 @@ jQuery( document ).ready( function($){
 				address: address
 			},
 			success: function( response ) {
-				console.log( response );
-				$('#error').html(response);
-				$('#error').addClass('alert alert-danger');
+				console.log( response.message );
+				$('#error').html(response.message);
+				if ( response.code === 1 ) $('#error').addClass('alert alert-success');
+				else $('#error').addClass('alert alert-danger');
 
 				$('html, body').animate({
 					scrollTop: $('#error').offset().top

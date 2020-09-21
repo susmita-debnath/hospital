@@ -1,4 +1,5 @@
 <?php
+	if( ! session_id() ) session_start();
 	if ( isset($_SERVER['PATH_INFO']) ) {
 		$path = trim( $_SERVER['PATH_INFO'], "//" );
 		$path_array = explode("/", $path);

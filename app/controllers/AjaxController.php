@@ -29,11 +29,42 @@
 			public function register() {
 				$user = new User();
 				if ( true === $user->uniquenessChecking($_POST['email']) ) {
+					$return_arr = array(
+										'code' => 1,
+										'message' => "You are registered successfully."
+									);
 					$user->set_user_data( $_POST );
 					$user->save();
 				}
-				else echo "The email has already been taken.";
+				else {
+					$return_arr = array(
+										'code' => 0,
+										'message' => "The email has already been taken."
+									);
+				}
+				// Encoding array in JSON format
+				echo json_encode($return_arr);
+				exit();
+			}
+
+			public function login() {
+				$user = new User();
+				//echo $user->is_user_valid($_POST['email'], $_POST['password']);
+				if ( true === $user->is_user_valid($_POST['email'], $_POST['password']) ) {
+					$return_arr = array(
+										'code' => 1,
+										'message' => "Logged in successfully."
+									);
+				}
+				else {
+					$return_arr = array(
+										'code' => 0,
+										'message' => "Username/password is not matched"
+									);
+				}
+				// Encoding array in JSON format
+				echo json_encode($return_arr);
+				exit();
 			}
 		}
-
 	}
